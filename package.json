@@ -1,0 +1,38 @@
+{
+  "name": "notify-redis-subscriber",
+  "version": "0.0.1",
+  "description": "A Redis subscriber for Notify",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "debug": "~2.2.0",
+    "redis": "~2.3.0"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*",
+    "sinon": "~1.17.0",
+    "istanbul": "~0.4.0",
+    "primus": "~4.0.1",
+    "primus-emit": "^0.1.2",
+    "primus-rooms": "~3.3.0",
+    "notify": "git://github.com/mlebrun/notify.git#master",
+    "ws": "~0.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mlebrun/notify-redis-subscriber.git"
+  },
+  "keywords": [
+    "notify"
+  ],
+  "author": "Matt LeBrun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mlebrun/notify-redis-subscriber/issues"
+  },
+  "homepage": "https://github.com/mlebrun/notify-redis-subscriber"
+}
