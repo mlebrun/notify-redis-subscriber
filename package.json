@@ -4,8 +4,8 @@
   "description": "A Redis subscriber for Notify",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --ui bdd -R spec -t 5000"
   },
   "dependencies": {
     "debug": "~2.2.0",
@@ -14,13 +14,10 @@
   "devDependencies": {
     "chai": "*",
     "mocha": "*",
-    "sinon": "~1.17.0",
-    "istanbul": "~0.4.0",
-    "primus": "~4.0.1",
-    "primus-emit": "^0.1.2",
-    "primus-rooms": "~3.3.0",
-    "notify": "git://github.com/mlebrun/notify.git#master",
-    "ws": "~0.8.0"
+    "sinon": "^1.17.0",
+    "istanbul": "^0.4.0",
+    "coveralls": "^2.11.5",
+    "fakeredis": "^0.2.0"
   },
   "repository": {
     "type": "git",
